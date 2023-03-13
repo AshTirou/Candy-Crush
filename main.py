@@ -1,6 +1,8 @@
 print("SIUUUUUUUU")
-def genere_grille(taille : int, nb_bonbons : int) -> list :
-    """Genere une grille en 2D de taille donnée avec un nombre de bonbons différents donnés
+
+
+def genere_grille(taille: int, nb_bonbons: int) -> list:
+  """Genere une grille en 2D de taille donnée avec un nombre de bonbons différents donnés
 
 
     Args:
@@ -11,8 +13,9 @@ def genere_grille(taille : int, nb_bonbons : int) -> list :
         list: Renvoie un tableau 2D
     """
 
-def inverse_case(grille : list, coord_1 : tuple, coord_2 : tuple ) -> list :
-    """Inverse les bonbons des deux cases si possible 
+
+def inverse_case(grille: list, coord_1: tuple, coord_2: tuple) -> list:
+  """Inverse les bonbons des deux cases si possible (si au moins un des deux crée une combinaison)
 
     Args:
         grille (list): Grille du Jeu
@@ -23,8 +26,9 @@ def inverse_case(grille : list, coord_1 : tuple, coord_2 : tuple ) -> list :
         list: Renvoie la grille du jeu modifiée
     """
 
-def analyse_combinaison(grille_modified:list, niveau:int) -> bool : 
-    """Vérifier si la combinaison est complète en fonction du niveau.
+
+def analyse_combinaison(grille_modified: list, niveau: int) -> bool:
+  """Vérifier si la combinaison est complète en fonction du niveau.
 
     Args:
         niveau (int): valeur du niveau
@@ -34,8 +38,10 @@ def analyse_combinaison(grille_modified:list, niveau:int) -> bool :
         bool: renvois True si l'inversement fonctionne sinon renvois False.
     """
 
-def complete_emplacements_vides(grille:list, index_combinaison_deleted:tuple) -> list:
-    """Permet que'après combinaison suprimée, déplacer ligne ou colonne, puis completer avec couleur aléatoire les cases vides.
+
+def complete_emplacements_vides(grille: list,
+                                index_combinaison_deleted: tuple) -> list:
+  """Permet que'après combinaison suprimée, déplacer ligne ou colonne, puis completer avec couleur aléatoire les cases vides.
 
     Args:
         grille (list): Grille du Jeu
@@ -45,8 +51,9 @@ def complete_emplacements_vides(grille:list, index_combinaison_deleted:tuple) ->
         list: Renvois la grille modifié
     """
 
-def partie_fini(grille:list) -> bool:
-    """Renvois si oui ou non, la partie est terminée.
+
+def partie_fini(grille: list) -> bool:
+  """Renvois si oui ou non, la partie est terminée.
 
     Args:
         grille (list): Grille du jeu.
